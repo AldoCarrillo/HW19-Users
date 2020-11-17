@@ -2,9 +2,11 @@
 
 
 
-### Heroku Link: https://rocky-beach-72996.herokuapp.com/
+### GitHub Link: https://aldocarrillo.github.io/HW19-Users/ 
 
 ### GitHub Repo: https://github.com/AldoCarrillo/HW19-Users
+
+### Heroku: https://rocky-beach-72996.herokuapp.com/
 
 ## Description
 
