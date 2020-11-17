@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/AldoCarrillo/HW19-Users/static/css/main.4e43eb6d.chunk.css",
+    "main.js": "/AldoCarrillo/HW19-Users/static/js/main.9e73fc61.chunk.js",
+    "main.js.map": "/AldoCarrillo/HW19-Users/static/js/main.9e73fc61.chunk.js.map",
+    "runtime-main.js": "/AldoCarrillo/HW19-Users/static/js/runtime-main.a4c324ab.js",
+    "runtime-main.js.map": "/AldoCarrillo/HW19-Users/static/js/runtime-main.a4c324ab.js.map",
+    "static/css/2.aa4865ec.chunk.css": "/AldoCarrillo/HW19-Users/static/css/2.aa4865ec.chunk.css",
+    "static/js/2.5eac1c4b.chunk.js": "/AldoCarrillo/HW19-Users/static/js/2.5eac1c4b.chunk.js",
+    "static/js/2.5eac1c4b.chunk.js.map": "/AldoCarrillo/HW19-Users/static/js/2.5eac1c4b.chunk.js.map",
+    "static/js/3.3a3b81f1.chunk.js": "/AldoCarrillo/HW19-Users/static/js/3.3a3b81f1.chunk.js",
+    "static/js/3.3a3b81f1.chunk.js.map": "/AldoCarrillo/HW19-Users/static/js/3.3a3b81f1.chunk.js.map",
+    "index.html": "/AldoCarrillo/HW19-Users/index.html",
+    "static/css/2.aa4865ec.chunk.css.map": "/AldoCarrillo/HW19-Users/static/css/2.aa4865ec.chunk.css.map",
+    "static/css/main.4e43eb6d.chunk.css.map": "/AldoCarrillo/HW19-Users/static/css/main.4e43eb6d.chunk.css.map",
+    "static/js/2.5eac1c4b.chunk.js.LICENSE.txt": "/AldoCarrillo/HW19-Users/static/js/2.5eac1c4b.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/AldoCarrillo/HW19-Users/static/media/arrow_right.0897f985.svg",
+    "static/media/all.min.css": "/AldoCarrillo/HW19-Users/static/media/fa-solid-900.46fdbd2d.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a4c324ab.js",
+    "static/css/2.aa4865ec.chunk.css",
+    "static/js/2.5eac1c4b.chunk.js",
+    "static/css/main.4e43eb6d.chunk.css",
+    "static/js/main.9e73fc61.chunk.js"
+  ]
+}
