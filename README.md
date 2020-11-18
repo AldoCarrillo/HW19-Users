@@ -15,8 +15,11 @@ What this project does is list of users where you can see al the info of the use
 -   User
     -       Photo
     -       Name
-    -       Lasname
+    -       Laatname
+    -       Age
+    -       Phone
     -       Email
+    -       Country
 
 You can Search by name or lastname.
 
@@ -38,6 +41,7 @@ Run the terminal the main file called "npm start" with Node .
 -   Website load a list of users when loads.
 -   To look for a user just typing the name in the input text .
 -   To sort the user A-Z or Z-A just clicking in the radio buttons.
+-   To Filter by firstName, LastName or Country just click in the radio button then search
 
 ## Main Page
 

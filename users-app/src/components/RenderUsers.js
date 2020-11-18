@@ -6,12 +6,11 @@ class RandomUsers extends React.Component {
 	state = {
 		loading: true,
 		users: [],
-		firstName: false,
-		lastName: false
+		filter: ''
 	};
 
 	async componentDidMount() {
-		const url = 'https://randomuser.me/api/?results=100';
+		const url = 'https://randomuser.me/api/?results=3000';
 		const response = await fetch(url);
 		const data = await response.json();
 
@@ -38,12 +37,13 @@ class RandomUsers extends React.Component {
 	}
 
 	handleFirstName = () => {
-		this.setState({ firstName: true });
-		this.setState({ lastName: false });
+		this.setState({ filter: 'firstname' });
 	};
 	handleLastName = () => {
-		this.setState({ lastName: true });
-		this.setState({ firstName: false });
+		this.setState({ filter: 'lastname' });
+	};
+	handleCountry = () => {
+		this.setState({ filter: 'country' });
 	};
 
 	handleOrderAZ = () => {
@@ -66,17 +66,30 @@ class RandomUsers extends React.Component {
 		e.preventDefault();
 		const title = this.title;
 
-		if (this.state.firstName === true) {
-			this.setState({ users: this.state.users.filter((user) => user.name.first === title.value) });
-		}
-		if (this.state.lastName === true) {
-			this.setState({ users: this.state.users.filter((user) => user.name.last === title.value) });
+		switch (this.state.filter) {
+			case 'firstname':
+				this.setState({ users: this.state.users.filter((user) => user.name.first === title.value) });
+				break;
+			case 'lastname':
+				this.setState({ users: this.state.users.filter((user) => user.name.last === title.value) });
+				break;
+			case 'country':
+				this.setState({ users: this.state.users.filter((user) => user.location.country === title.value) });
+				break;
+
+			default:
+				break;
 		}
 	};
 
 	render() {
 		if (this.state.loading) {
-			return <div> Loading... </div>;
+			return (
+				<div>
+					{' '}
+					<h1>Loading... </h1>
+				</div>
+			);
 		}
 
 		if (!this.state.users) {
@@ -94,8 +107,9 @@ class RandomUsers extends React.Component {
 						<input type="radio" id="check2" value="ZA" name="sort" onChange={this.handleOrderZA} />Z-A
 						<br />
 						<label id="filter"> Filter By :</label>
-						<input type="checkbox" id="radio1" name="filter" onChec={this.handleFirstName} />FristName
-						<input type="checkbox" id="radio2" name="filter" onChange={this.handleLastName} />LastName
+						<input type="radio" id="radio1" name="filter" onChange={this.handleFirstName} />FristName
+						<input type="radio" id="radio2" name="filter" onChange={this.handleLastName} />LastName
+						<input type="radio" id="radio3" name="filter" onChange={this.handleCountry} />Country
 						<br />
 					</h2>
 					<input
