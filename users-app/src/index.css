@@ -25,10 +25,11 @@ code {
 
 }
 
-#c2,#c1{
+#check2,#check1,#radio1,#radio2{
   margin: 10px;
   font-size: x-large;
   font-weight: bold;
+  
 
 
 }
