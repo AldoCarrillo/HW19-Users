@@ -68,13 +68,19 @@ class RandomUsers extends React.Component {
 
 		switch (this.state.filter) {
 			case 'firstname':
-				this.setState({ users: this.state.users.filter((user) => user.name.first === title.value) });
+				this.setState({
+					users: this.state.users.filter((user) => user.name.first.toLowerCase() === title.value)
+				});
 				break;
 			case 'lastname':
-				this.setState({ users: this.state.users.filter((user) => user.name.last === title.value) });
+				this.setState({
+					users: this.state.users.filter((user) => user.name.last.toLowerCase() === title.value)
+				});
 				break;
 			case 'country':
-				this.setState({ users: this.state.users.filter((user) => user.location.country === title.value) });
+				this.setState({
+					users: this.state.users.filter((user) => user.location.country.toLowerCase() === title.value)
+				});
 				break;
 
 			default:
