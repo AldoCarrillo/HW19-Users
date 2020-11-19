@@ -45,7 +45,7 @@ Run the terminal the main file called "npm start" with Node .
 
 ## Main Page
 
-![main](./users-app/public/main.PNG)
+![main](./public/main.PNG)
 
 
 ## Test
