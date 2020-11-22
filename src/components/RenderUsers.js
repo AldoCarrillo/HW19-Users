@@ -10,7 +10,7 @@ class RandomUsers extends React.Component {
 	};
 
 	async componentDidMount() {
-		const url = 'https://randomuser.me/api/?results=3000';
+		const url = 'https://randomuser.me/api/?results=100';
 		const response = await fetch(url);
 		const data = await response.json();
 
